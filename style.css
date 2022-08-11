@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body{
+    background-color: #EEEEEE;
+    max-width: 414px;
+    font-family: "Roboto", sans-serif;}
+
+h1{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight:400;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.top-box{
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    padding: 8px 0 18px 21px;
+
+    position: fixed;
+    top: 0;
+    left: 0px;
+}
+
+.bottom-box{
+    background-color: white;
+    width: 414px;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.order-button{
+    background-color: #CBCBCB;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-text{
+    width: 60%;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container{
+    margin-top: 122px;
+    padding-left: 20px;
+}
+
+.row-title{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.product{
+    background-color: white;
+    width: 500px;
+    height: 216px;
+    margin-right: 16px;
+    padding: 0 15px;
+
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.product-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;  
+    
+    margin-top: 8px;
+}
+
+.description{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.color-white{
+    color: white;
+}
+
+.space{
+    height: 108px;
+}
+
