@@ -30,6 +30,16 @@ img{
     border-radius: 4px;
 }
 
+ion-icon{
+    color: #32b72f;
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 140px;
+  
+}
+
+
 .top-box{
     background-color: #CF2B2B;
     width: 414px;
@@ -41,6 +51,8 @@ img{
     position: fixed;
     top: 0;
     left: 0px;
+
+    z-index: 1;
 }
 
 .bottom-box{
@@ -114,10 +126,13 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+
 }
 
 .selected{
     box-shadow: inset 0px 0px 0px 5px #32b72f;
+    position: relative;
 }
 
 .order-habilited{

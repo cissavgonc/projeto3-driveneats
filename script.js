@@ -2,12 +2,11 @@
 let food, drink, dessert;
 
 function selectFood(item){
-   console.log(item);
 
    const foodButton = document.querySelector('.food .selected');
 
    if (foodButton) {
-    foodButton.classList.remove('selected')
+    foodButton.classList.remove('selected');
    }
 
    item.classList.add('selected');
@@ -18,12 +17,11 @@ function selectFood(item){
 }   
 
 function selectDrink(item){
-   console.log(item);
 
    const drinkButton = document.querySelector('.drink .selected');
 
    if (drinkButton) {
-    drinkButton.classList.remove('selected')
+    drinkButton.classList.remove('selected');
    }
 
    item.classList.add('selected');
@@ -34,12 +32,11 @@ function selectDrink(item){
 } 
 
 function selectDessert(item){
-   console.log(item);
 
    const dessertButton = document.querySelector('.dessert .selected');
 
-   if (dessertButton) {
-      dessertButton.classList.remove('selected')
+   if (dessertButton!==null) {
+      dessertButton.classList.remove('selected');
    }
 
    item.classList.add('selected');
@@ -52,7 +49,7 @@ function selectDessert(item){
 function bottomButtonHabilited(){
 
    if (food !== undefined && drink !== undefined && dessert !== undefined ){
-      const bottomButton = document.querySelector('.order-button')
+      const bottomButton = document.querySelector('.order-button');
       bottomButton.classList.add('order-habilited');
       const textOrder = document.querySelector('.order-text');
       textOrder.innerHTML = "Fechar pedido";
@@ -62,6 +59,13 @@ function bottomButtonHabilited(){
 
 //botão de finalizar pedido liberado
 
-function finishOrder(food !== undefined && drink !== undefined && dessert !== undefined ){
-   window.open("https://www.w3schools.com");
-}
+function finishOrder(){
+   let text = "Olá, gostaria de fazer o pedido:\n- Prato: Frango Yin Yang\n- Bebida: Coquinha Gelada\n- Sobremesa: PudimTotal: R$ 27.70";
+   let x = encodeURIComponent(text);
+   console.log(x);
+
+   if (food !== undefined && drink !== undefined && dessert !== undefined ){
+      window.open(`https://wa.me/5549999072740?text=${x}`);
+   }
+}  
+
